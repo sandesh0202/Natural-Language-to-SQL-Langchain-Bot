@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>Hi Welcome to SQL Query Chatbot</head>
+    <body>
+        <form action = "" method="post" >
+            <input type="text" name="new_query">
+                Your Query
+            </input>
+            <input type="submit" value = "Ask"></input>
+        </form>
+    
+        <div id="output"></div>
+
+        
+
+        <table>
+            
+            {% for row in output_list %}
+            <tr>
+                {% for cell in row %}
+                <td>{{ cell }} </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    
+        
+    </body>
+</html>
+

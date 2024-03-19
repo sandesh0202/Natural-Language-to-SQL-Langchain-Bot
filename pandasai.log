@@ -1,0 +1,461 @@
+2024-03-11 13:08:13 [INFO] Question: what is the total stock
+
+2024-03-11 13:08:13 [INFO] Running PandasAI with openai LLM...
+2024-03-11 13:08:13 [INFO] Prompt ID: 47f2285f-f4bc-45fe-9463-3db6addf80f9
+2024-03-11 13:08:13 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-03-11 13:08:13 [INFO] Executing Step 0: ValidatePipelineInput
+2024-03-11 13:08:13 [INFO] Executing Step 1: CacheLookup
+2024-03-11 13:08:13 [INFO] Executing Step 2: PromptGeneration
+2024-03-11 13:08:13 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 6
+  columns: 3
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1004
+      - 1003
+      - 1002
+    - name: Stock
+      type: int64
+      samples:
+      - 15
+      - 25
+      - 75
+    - name: Location
+      type: object
+      samples:
+      - Online Store
+      - East Warehouse
+      - South Store
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ what is the total stock
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-03-11 13:08:13 [INFO] Executing Step 3: CodeGenerator
+2024-03-11 13:08:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 13:08:15 [INFO] Retrying request to /chat/completions in 0.752074 seconds
+2024-03-11 13:08:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 13:08:16 [INFO] Retrying request to /chat/completions in 1.858068 seconds
+2024-03-11 13:08:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 13:08:19 [ERROR] Pipeline failed on step 3: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-03-11 15:14:36 [INFO] Question: give me list of all phones
+
+
+2024-03-11 15:14:36 [INFO] Running PandasAI with openai LLM...
+2024-03-11 15:14:36 [INFO] Prompt ID: 00b8eb78-7a46-44ef-924c-086b13e0d485
+2024-03-11 15:14:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-03-11 15:14:36 [INFO] Executing Step 0: ValidatePipelineInput
+2024-03-11 15:14:36 [INFO] Executing Step 1: CacheLookup
+2024-03-11 15:14:36 [INFO] Executing Step 2: PromptGeneration
+2024-03-11 15:14:36 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 4
+  columns: 4
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1004
+      - 1002
+      - 1001
+    - name: Name
+      type: object
+      samples:
+      - Tablet Z10
+      - Laptop Y2
+      - Phone X1
+    - name: Description
+      type: object
+      samples:
+      - Latest smartphone model with advanced camera features
+      - Feature-packed smartwatch for fitness tracking and notifications
+      - Portable tablet for entertainment and productivity
+    - name: Price
+      type: object
+      samples:
+      - $1200
+      - $500
+      - $300
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ give me list of all phones
+
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-03-11 15:14:36 [INFO] Executing Step 3: CodeGenerator
+2024-03-11 15:14:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:14:37 [INFO] Retrying request to /chat/completions in 0.860403 seconds
+2024-03-11 15:14:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:14:39 [INFO] Retrying request to /chat/completions in 1.969671 seconds
+2024-03-11 15:14:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:14:41 [ERROR] Pipeline failed on step 3: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-03-11 15:15:36 [INFO] Question: give me list of all phones
+2024-03-11 15:15:36 [INFO] Running PandasAI with openai LLM...
+2024-03-11 15:15:36 [INFO] Prompt ID: 3a4ddfde-16ef-4988-b459-4510c8e91968
+2024-03-11 15:15:36 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-03-11 15:15:36 [INFO] Executing Step 0: ValidatePipelineInput
+2024-03-11 15:15:36 [INFO] Executing Step 1: CacheLookup
+2024-03-11 15:15:36 [INFO] Executing Step 2: PromptGeneration
+2024-03-11 15:15:36 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 4
+  columns: 4
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1004
+      - 1002
+      - 1003
+    - name: Name
+      type: object
+      samples:
+      - Tablet Z10
+      - Laptop Y2
+      - Smartwatch A1
+    - name: Description
+      type: object
+      samples:
+      - Portable tablet for entertainment and productivity
+      - Latest smartphone model with advanced camera features
+      - Sleek and powerful laptop for demanding tasks
+    - name: Price
+      type: object
+      samples:
+      - $300
+      - $1200
+      - $500
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ give me list of all phones
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-03-11 15:15:36 [INFO] Executing Step 3: CodeGenerator
+2024-03-11 15:15:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:15:38 [INFO] Retrying request to /chat/completions in 0.795732 seconds
+2024-03-11 15:15:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:15:40 [INFO] Retrying request to /chat/completions in 1.962907 seconds
+2024-03-11 15:15:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-11 15:15:42 [ERROR] Pipeline failed on step 3: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-03-12 13:13:10 [INFO] Question: give me list of names
+
+2024-03-12 13:13:10 [INFO] Running PandasAI with openai LLM...
+2024-03-12 13:13:10 [INFO] Prompt ID: a71745a7-058f-46c8-9c7d-a8a899b5cf32
+2024-03-12 13:13:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-03-12 13:13:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-03-12 13:13:10 [INFO] Executing Step 1: CacheLookup
+2024-03-12 13:13:10 [INFO] Executing Step 2: PromptGeneration
+2024-03-12 13:13:10 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 4
+  columns: 4
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1001
+      - 1003
+      - 1002
+    - name: Name
+      type: object
+      samples:
+      - Laptop Y2
+      - Tablet Z10
+      - Smartwatch A1
+    - name: Description
+      type: object
+      samples:
+      - Latest smartphone model with advanced camera features
+      - Sleek and powerful laptop for demanding tasks
+      - Portable tablet for entertainment and productivity
+    - name: Price
+      type: object
+      samples:
+      - $300
+      - $500
+      - $200
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ give me list of names
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-03-12 13:13:10 [INFO] Executing Step 3: CodeGenerator
+2024-03-12 13:13:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-12 13:13:12 [INFO] Retrying request to /chat/completions in 0.944243 seconds
+2024-03-12 13:13:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-12 13:13:13 [INFO] Retrying request to /chat/completions in 1.733162 seconds
+2024-03-12 13:13:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2024-03-12 13:13:15 [ERROR] Pipeline failed on step 3: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2024-03-12 13:18:14 [INFO] Question: give me list of name
+
+2024-03-12 13:18:14 [INFO] Running PandasAI with openai LLM...
+2024-03-12 13:18:14 [INFO] Prompt ID: 69a1835d-e3da-4560-8505-a31ca1330fc3
+2024-03-12 13:18:14 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-03-12 13:18:14 [INFO] Executing Step 0: ValidatePipelineInput
+2024-03-12 13:18:14 [INFO] Executing Step 1: CacheLookup
+2024-03-12 13:18:14 [INFO] Executing Step 2: PromptGeneration
+2024-03-12 13:18:14 [INFO] Using prompt: dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 4
+  columns: 4
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1003
+      - 1001
+      - 1002
+    - name: Name
+      type: object
+      samples:
+      - Smartwatch A1
+      - Phone X1
+      - Laptop Y2
+    - name: Description
+      type: object
+      samples:
+      - Latest smartphone model with advanced camera features
+      - Portable tablet for entertainment and productivity
+      - Feature-packed smartwatch for fitness tracking and notifications
+    - name: Price
+      type: object
+      samples:
+      - $500
+      - $300
+      - $1200
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ give me list of name
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-03-12 13:18:14 [INFO] Executing Step 3: CodeGenerator
+2024-03-12 13:18:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-03-12 13:18:17 [INFO] Prompt used:
+            dfs[0]:
+  name: null
+  description: null
+  type: pd.DataFrame
+  rows: 4
+  columns: 4
+  schema:
+    fields:
+    - name: Product ID
+      type: int64
+      samples:
+      - 1003
+      - 1001
+      - 1002
+    - name: Name
+      type: object
+      samples:
+      - Smartwatch A1
+      - Phone X1
+      - Laptop Y2
+    - name: Description
+      type: object
+      samples:
+      - Latest smartphone model with advanced camera features
+      - Portable tablet for entertainment and productivity
+      - Feature-packed smartwatch for fitness tracking and notifications
+    - name: Price
+      type: object
+      samples:
+      - $500
+      - $300
+      - $1200
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ give me list of name
+
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-03-12 13:18:17 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+dfs[0]['Name'].tolist()
+
+# Declare result var: 
+result = { "type": "list", "value": dfs[0]['Name'].tolist() }
+            ```
+            
+2024-03-12 13:18:17 [INFO] Executing Step 4: CachePopulation
+2024-03-12 13:18:17 [INFO] Executing Step 5: CodeExecution
+2024-03-12 13:18:17 [INFO] 
+Code running:
+```
+dfs[0]['Name'].tolist()
+result = {'type': 'list', 'value': dfs[0]['Name'].tolist()}
+        ```
+2024-03-12 13:18:17 [INFO] Executing Step 6: ResultValidation
+2024-03-12 13:18:17 [INFO] Answer: {'type': 'list', 'value': ['Phone X1', 'Laptop Y2', 'Tablet Z10', 'Smartwatch A1']}
+2024-03-12 13:18:17 [INFO] Executing Step 7: ResultParsing
